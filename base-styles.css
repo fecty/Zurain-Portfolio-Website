@@ -1,0 +1,21 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', Arial, monospace;
+}
+
+
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    gap: clamp(10px, 3vmin, 40px);
+}
