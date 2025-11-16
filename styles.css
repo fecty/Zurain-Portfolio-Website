@@ -1,14 +1,26 @@
 :root {
+  --fg: rgb(16, 17, 19);
+  --bg: #efece3;
+  --color-transition-speed: 0.5s;
+}
+
+body.dark-mode {
   --fg: #efece3;
   --bg: rgb(16, 17, 19);
+  transition: color var(--color-transition-speed) ease,
+    background-color var(--color-transition-speed) ease;
 }
 
 header {
-  width: fit-content;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
-  /* position: sticky;
-    top: 0px; */
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: baseline;
 }
 
 #header-title {
@@ -18,7 +30,9 @@ header {
 nav {
   font-size: clamp(16px, 1.2em, 2em);
   display: block;
+  gap: 10px;
   margin: 0 auto;
+  width: fit-content;
 }
 
 .line {
@@ -47,6 +61,25 @@ body {
   color: var(--fg);
   font-size: 20px;
   font-size: clamp(16px, 2.5vmin, 25px);
+  transition: color var(--color-transition-speed) ease,
+    background-color var(--color-transition-speed) ease;
+}
+
+#switch-theme {
+  background-color: transparent;
+  clip-path: circle(41%);
+  box-shadow: none;
+  border: none;
+  /* display: inline-block; */
+}
+
+#switch-theme:hover {
+  cursor: pointer;
+}
+
+#switch-theme-icon {
+  width: 60px;
+  filter: grayscale(100%);
 }
 
 @media (max-width: 700px) {
