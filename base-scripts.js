@@ -1,9 +1,19 @@
 const toggleBtn = document.getElementById("switch-theme");
 const toggleIcon = document.getElementById("switch-theme-icon");
 
+const used_theme = localStorage.getItem("theme");
+
 // Load saved theme
-if (localStorage.getItem("theme") === "dark") {
+if (used_theme === "dark") {
   document.body.classList.add("dark-mode");
+  toggleIcon.src = used_theme ? "assets/sun.svg" : "assets/moon.svg";
+  toggleBtn.style.clipPath = used_theme
+    ? "circle(48.36% at 30px 30px)"
+    : "circle(41% at 30px 30px)";
+
+  toggleIcon.style.filter = used_theme
+    ? "invert(1) grayscale(1)"
+    : "invert(0) grayscale(1)";
 }
 
 // Toggle theme when button is clicked
@@ -22,7 +32,7 @@ toggleBtn.addEventListener("click", () => {
     : "circle(41% at 30px 30px)";
 
   // Save the current theme
-  if (document.body.classList.contains("dark")) {
+  if (document.body.classList.contains("dark-mode")) {
     localStorage.setItem("theme", "dark");
   } else {
     localStorage.setItem("theme", "light");
