@@ -1,7 +1,7 @@
 :root {
   --fg: rgb(16, 17, 19);
   --bg: #ffffff;
-  --color-transition-speed: 0.5s;
+  --color-transition-speed: 0s; /*Set to .4s in js*/
 }
 
 body.dark-mode {
