@@ -1,6 +1,6 @@
 :root {
   --fg: rgb(16, 17, 19);
-  --bg: #efece3;
+  --bg: #ffffff;
   --color-transition-speed: 0.5s;
 }
 
@@ -83,11 +83,16 @@ body {
 }
 
 @media (max-width: 700px) {
-  body {
-    /* font-size: 16px; */
-  }
   .container {
     width: 100%;
     border: none;
+  }
+
+  #switch-theme {
+    clip-path: none;
+  }
+
+  #switch-theme-icon {
+    width: 30px;
   }
 }
