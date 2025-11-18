@@ -2,12 +2,21 @@ const toggleBtn = document.getElementById("switch-theme");
 const toggleIcon = document.getElementById("switch-theme-icon");
 const used_theme = localStorage.getItem("theme");
 
+let sun_loc = "assets/sun.svg";
+let moon_loc = "assets/moon.svg";
+
+if (window.location.pathname.includes("/page") == true) {
+  sun_loc = "../assets/sun.svg";
+  moon_loc = "../assets/moon.svg";
+}
+console.log(moon_loc);
+
 // Load saved theme
 if (used_theme === "dark") {
   document.body.classList.add("dark-mode");
 
   // Configure Button and Icon
-  toggleIcon.src = used_theme ? "assets/sun.svg" : "assets/moon.svg";
+  toggleIcon.src = used_theme ? sun_loc : moon_loc;
   toggleBtn.style.clipPath = used_theme
     ? "circle(48.36% at 30px 30px)"
     : "circle(41% at 30px 30px)";
@@ -24,7 +33,7 @@ toggleBtn.addEventListener("click", () => {
   console.log("Dark Mode " + (dark ? "Enabled" : "Disabled"));
 
   // Configure Button and Icon
-  toggleIcon.src = dark ? "assets/sun.svg" : "assets/moon.svg";
+  toggleIcon.src = dark ? sun_loc : moon_loc;
   toggleIcon.style.filter = dark
     ? "invert(1) grayscale(1)"
     : "invert(0) grayscale(1)";
