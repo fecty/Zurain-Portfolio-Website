@@ -67,9 +67,11 @@ body {
 
 #switch-theme {
   background-color: transparent;
-  clip-path: circle(41%);
+  /* clip-path: circle(41%); */
   box-shadow: none;
   border: none;
+  pointer-events: none;
+  height: fit-content;
   /* display: inline-block; */
 }
 
@@ -80,6 +82,7 @@ body {
 #switch-theme-icon {
   width: 60px;
   filter: grayscale(100%);
+  pointer-events: auto;
 }
 
 @media (max-width: 700px) {

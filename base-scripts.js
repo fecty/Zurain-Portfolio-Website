@@ -17,9 +17,9 @@ if (used_theme === "dark") {
 
   // Configure Button and Icon
   toggleIcon.src = used_theme ? sun_loc : moon_loc;
-  toggleBtn.style.clipPath = used_theme
-    ? "circle(48.36% at 30px 30px)"
-    : "circle(41% at 30px 30px)";
+  // toggleBtn.style.clipPath = used_theme
+  //   ? "circle(48.36% at 30px 30px)"
+  //   : "circle(41% at 30px 30px)";
   toggleIcon.style.filter = used_theme
     ? "invert(1) grayscale(1)"
     : "invert(0) grayscale(1)";
@@ -37,9 +37,9 @@ toggleBtn.addEventListener("click", () => {
   toggleIcon.style.filter = dark
     ? "invert(1) grayscale(1)"
     : "invert(0) grayscale(1)";
-  toggleBtn.style.clipPath = dark
-    ? "circle(48.36% at 30px 30px)"
-    : "circle(41% at 30px 30px)";
+  // toggleBtn.style.clipPath = dark
+  //   ? "circle(48.36% at 30px 30px)"
+  //   : "circle(41% at 30px 30px)";
 
   // Save the current theme
   if (document.body.classList.contains("dark-mode")) {
