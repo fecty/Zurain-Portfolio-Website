@@ -2,7 +2,6 @@
 
 ## Overview
 
-🚧Currently Under Construction...🚧  
 This is a personal portfolio website for Zurain Nazir, designed to showcase skills, education, projects, and contact information in a clean and professional format. The site is built using HTML and CSS, with a focus on responsive design and readability.
 
 ## Project Structure
