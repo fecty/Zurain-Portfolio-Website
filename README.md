@@ -9,9 +9,8 @@ This is a personal portfolio website for Zurain Nazir, designed to showcase skil
 ```
 index.html         # Main entry-point HTML file for the website
 styles.css         # Main stylesheet of index.html for layout and design
-pages/             # Directory containing HTML files of other pages
-styles/            # Directory containing stylesheets for the project
-js/                # Directory containing JavaScript files for the project
+base-styles.css    # Base stylesheet for all html documents
+base-scripts.js    # Base script file for all html documents
 assets/            # Folder for images, icons, and other assets
 README.md          # Project documentation
 LICENSE            # License information
