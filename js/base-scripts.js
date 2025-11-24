@@ -1,4 +1,4 @@
-const toggleBtn = document.getElementById("switch-theme");
+const toggleBtn = document.getElementById("theme-button");
 const toggleIcon = document.getElementById("switch-theme-icon");
 const used_theme = localStorage.getItem("theme");
 
