@@ -1,7 +1,7 @@
-# Zurain Portfolio Website
+# Archived Zurain Portfolio Website
+## 📌This project has been discontinued and archived. To check the latest rendition of the portfolio website. Go to [github/fecty.github.io](https://github.com/fecty/fecty.github.io)  
 
 ## Overview
-
 This is a personal portfolio website for Zurain Nazir, designed to showcase skills, education, projects, and contact information in a clean and professional format. The site is built using HTML and CSS, with a focus on responsive design and readability.
 
 ## Project Structure
